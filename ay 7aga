@@ -1,0 +1,7 @@
+SET AWS_SESSION_TOKEN= FwoGZXIvYXdzEJT//////////wEaDKHVAgPqdqlM3onA/SLVAWifcIhXb8dlw/G/rnl1P9lshfdcFuVacgyvcnxT/2uaK36BCF8bD873rh6rOw8WPL719HaNHrdhBBwfo79hxBzdm5zs3ldtkzKJ5Oq/mBXUgiyWw3EZAMhxU7lMbFum9CBuoumUdNyxkiiXkn2dJNeD5RlFJ21M2ga++uv59Vo0rSzYdloWbXixf7UzT/CxvEZtzdDcSZWq5Mf7n/hMHVQeoQu4mr1aZ2QyK6m3pOqne2Db5xL5Eobg6HjDTRlH8C15E761n9MVI4QLJsY9RZAPbohIkiiu9L6eBjIt+tGXCXbXV6y85/By3R2ONLfTq1IxKrY1bssSNalOC+o9uSnHhtOEa3vbpJyu
+AKIARHYQDKGIIT66TDDT
+8kvSfI8WJx9PgAqTGPp5uIU/4YDG6dUIExxPDp5/
+"buildY": "npx tsc && copy -r -fo src/config www/config && copy .npmrc www/.npmrc && copy package.json www/package.json && cd www && Compress-Archive -Path . -DestinationPath Archive.zip  && cd .. ",
+npm install . && npm run clean && tsc && cp -rf src/config www/config && cp -R .elasticbeanstalk www/.elasticbeanstalk && cp .npmrc www/.npmrc && zip -r Archive.zip * -x ./node_modules
+ port: number(process.env.PORT),
+  db_port: number(process.env.DB_PORT),
